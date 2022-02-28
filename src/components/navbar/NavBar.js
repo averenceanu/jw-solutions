@@ -4,7 +4,8 @@ export default function NavBar () {
   return (
     <div className="navbar"> 
       <div className="navbar--logo">
-        Logo
+        <img className="navbar--image" src="./images/smallLogo.png" alt="longLogo" /> 
+        <h3 className="navbar--title">JekaWeb Solutions Inc. </h3>
       </div>
       <div className="navbar--buttons">
         About Us
