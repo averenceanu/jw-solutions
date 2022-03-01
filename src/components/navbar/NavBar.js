@@ -10,14 +10,12 @@ export default function NavBar () {
         <h3 className="navbar--title">JekaWeb Solutions Inc. </h3>
       </div>
       <div className="navbar--buttons">
-        <ButtonGroup variant="text" aria-label="text button group">
-          <Button>About Us</Button>
-          <Button>Services</Button>
-          <Button>Careers</Button>
-          <Button>Contact</Button>
-          <Button>Email Us</Button>
-        </ButtonGroup>
+          <Button color='secondary'>About Us</Button>
+          <Button color='secondary'>Services</Button>
+          <Button color='secondary'>Careers</Button>
+          <Button color='secondary'>Contact</Button>
+          <Button color='secondary' variant='contained'>Email Us</Button>
       </div>
     </div>
-  )
+  );
 }

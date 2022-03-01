@@ -29,3 +29,12 @@
   font-size: 250%;
   color: #f2b891;
 }
+
+.navbar--buttons{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
