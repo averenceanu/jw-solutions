@@ -24,7 +24,7 @@
   animation: change 5s step-end infinite;
 }
 
-.presentation--description {
+.presentation--logo {
   font-size: 200%;
   font-family: 'Exo 2';
   font-weight: 400;
@@ -32,6 +32,22 @@
   margin: 0;
   
 }
+
+.presentation--description {
+  font-size: 150%;
+  font-family: 'Exo 2';
+  font-weight: 400;
+  color: #f2b891;
+  margin: 0;
+  width: 70%;
+  text-align: center;
+}
+
+.presentation--button{
+  display: flex;
+  flex-direction: row;
+}
+
 
 @keyframes change {
   0% {
