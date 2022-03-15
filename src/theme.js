@@ -56,10 +56,13 @@ const theme = (mode) => createTheme ({
       styleOverrides: {
         root: {
           borderRadius: 20,
-          color: 'secondary',
+          backgroundColor: 'secondary',
           margin: 5,
-          disableElevation: 'true',
+          disableElevation: true,
           padding: 10,
+        },
+        '&:hover': {
+          backgroundColor: 'fff',
         }
       }
     }

@@ -1,6 +1,6 @@
 import './navbar.css'
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function NavBar () {
   return (
@@ -14,7 +14,7 @@ export default function NavBar () {
           <Button color='secondary'>Services</Button>
           <Button color='secondary'>Careers</Button>
           <Button color='secondary'>Contact</Button>
-          <Button color='secondary' variant='contained'>Email Us</Button>
+          <Button color='secondary' variant='contained'>Email Us <EmailIcon sx={{pl:1}}/></Button>
       </div>
     </div>
   );
