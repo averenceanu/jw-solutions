@@ -10,6 +10,9 @@ export default function Presentation () {
           <h1 className='presentation--it' >IT </h1>
           <h1 className='presentation--coorporate'>Solutions</h1>
         </div>
+        <div className="presentation--description">
+          <p>Consulting. Developing. Building.</p>
+        </div>
     </div>
   )
 }
