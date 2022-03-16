@@ -1,4 +1,32 @@
 .specialisation {
   display: flex;
   background-color: #e3e2cb;
+  flex-direction: column;
+}
+
+.specialisation--what-we-do {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 2%;
+  font-family: 'Exo 2';
+}
+
+.specialisation--title{
+  text-align: right;
+  padding: 5%;
+  width: 50%;
+  color: #22346a;
+}
+
+.specialisation--image{
+  width: auto;
+  height: 400px;
+  max-width: 100%;
+}
+
+.specialisation--image-div{
+  display: flex;
+  justify-content: center;
 }

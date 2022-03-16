@@ -3,7 +3,7 @@ import Button from '@mui/material/Button'
 
 export default function Presentation () { 
   return (
-    <div className = "presentation" style ={{backgroundImage: `url(/images/baner.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw', height: '100vh'}}>
+    <div className = "presentation" style ={{backgroundImage: `url(/images/baner.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: 'auto', height: '90vh'}}>
         <div className="presentation--title"> 
           <h1 className='presentation--coorporate'>Corporate</h1>
           <h1 className='presentation--it' >IT </h1>
