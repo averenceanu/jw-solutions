@@ -1,8 +1,8 @@
 import './app.css'
 import NavBar from "./components/navbar/NavBar.js"
 import Presentation from "./components/presentation/Presentation.js"
-import About from "./components/specialisation/Specialisation.js"
-import Raitings from "./components/raitings/Raitings.js"
+import About from "./components/about/About.js"
+import Specialisation from "./components/specialisation/Specialisation.js"
 import Footbar from "./components/footbar/Footbar.js"
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <NavBar/> 
       <Presentation /> 
       <About /> 
-      <Raitings />
+      <Specialisation />
       <Footbar /> 
     </div>
   );
