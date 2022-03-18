@@ -9,14 +9,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 2%;
   font-family: 'Exo 2';
   position: relative;
 }
 
 .specialisation--title{
   text-align: right;
-  padding: 5%;
+  padding: 2%;
+  width: 50%;
+  color: #22346a;
+}
+.specialisation--title--second{
+  text-align: left;
+  padding: 2%;
   width: 50%;
   color: #22346a;
 }
@@ -66,3 +71,42 @@
 .custom-shape-divider-top-1647462229 .shape-fill {
   fill: #E3E2CB;
 }
+
+.specialisation--statistics-main-content{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: 'Exo 2';
+  font-size: 150%;
+  
+}
+
+.specialisation-statistics{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+  align-items: center;
+}
+.statistics--main-element{
+  margin: 0;
+}
+
+.statistics--second-element{
+  margin: 0;
+  font-weight: 400;
+}
+
+/* .break-line{
+  position: relative;
+	margin-top: 90px;
+	height: 1px;
+  content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+} */
