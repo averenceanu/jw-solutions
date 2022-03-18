@@ -11,6 +11,7 @@
   flex-direction: row;
   padding: 2%;
   font-family: 'Exo 2';
+  position: relative;
 }
 
 .specialisation--title{
@@ -24,9 +25,44 @@
   width: auto;
   height: 400px;
   max-width: 100%;
+  background-attachment: fixed;
 }
 
 .specialisation--image-div{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Exo 2';
+  color: #e635e4;
+  font-size: 300%;
+}
+
+.specialisation--tag{
+  margin: 0;
+  padding-right: 2%;
+}
+
+.specialisation--shape{
+  position: relative;
+}
+
+.custom-shape-divider-top-1647462229 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1647462229 svg {
+  position: relative;
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 157px;
+}
+
+.custom-shape-divider-top-1647462229 .shape-fill {
+  fill: #E3E2CB;
 }
