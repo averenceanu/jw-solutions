@@ -1,0 +1,112 @@
+.about {
+  display: flex;
+  background-color: #e3e2cb;
+  flex-direction: column;
+}
+
+.about--what-we-do {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Exo 2';
+  position: relative;
+}
+
+.about--title{
+  text-align: right;
+  padding: 2%;
+  width: 50%;
+  color: #22346a;
+}
+.about--title--second{
+  text-align: left;
+  padding: 2%;
+  width: 50%;
+  color: #22346a;
+}
+
+.about--image{
+  width: auto;
+  height: 400px;
+  max-width: 100%;
+  background-attachment: fixed;
+}
+
+.about--image-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Exo 2';
+  color: #e635e4;
+  font-size: 300%;
+}
+
+.about--tag{
+  margin: 0;
+  padding-right: 2%;
+}
+
+.about--shape{
+  position: relative;
+}
+
+.custom-shape-divider-top-1647462229 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1647462229 svg {
+  position: relative;
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 157px;
+}
+
+.custom-shape-divider-top-1647462229 .shape-fill {
+  fill: #E3E2CB;
+}
+
+.about--statistics-main-content{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: 'Exo 2';
+  font-size: 150%;
+  
+}
+
+.about-statistics{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+  align-items: center;
+}
+.statistics--main-element{
+  margin: 0;
+}
+
+.statistics--second-element{
+  margin: 0;
+  font-weight: 400;
+}
+
+/* .break-line{
+  position: relative;
+	margin-top: 90px;
+	height: 1px;
+  content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+} */
