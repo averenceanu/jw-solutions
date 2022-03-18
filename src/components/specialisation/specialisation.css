@@ -1,0 +1,12 @@
+.specialisation{
+  background-color: #e3e2cb;
+}
+.specialisation--title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Exo 2';
+  font-weight: 700;
+  font-size: 200%;
+  color: #22346a;
+}
+

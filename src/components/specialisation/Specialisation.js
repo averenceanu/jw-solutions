@@ -1,12 +1,38 @@
 import './specialisation.css'
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 
 export default function Raitings () {
   return (
-    <div>
-      <div className="specialisation--title">How We Can Help</div>
-      <div className="specialisation--grid">
-
+    <div className="specialisation">
+      <div className="specialisation--title" > 
+        <h1> How We Can Help </h1> 
+      </div>
+      <div classname="specialisation--grid">
+        <Card sx={{ minWidth: 275 }}>
+          <CardContent>
+            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+              Word of the Day
+            </Typography>
+            <Typography variant="h5" component="div">
+              Web Applications
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              adjective
+            </Typography>
+            <Typography variant="body2">
+              well meaning and kindly.
+              <br />
+              {'"a benevolent smile"'}
+            </Typography>
+          </CardContent>
+        </Card>
       </div>
     </div>
-  )
+  );
 }
