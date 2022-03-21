@@ -1,37 +1,58 @@
 import './specialisation.css'
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import LanguageIcon from '@mui/icons-material/Language';
+import WebAssetIcon from '@mui/icons-material/WebAsset';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
+const listOfSpecialities = [
+  {
+    icons: [<LanguageIcon />, <WebAssetIcon />],
+    title : 'Web Applications',
+    description : 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
+  }, 
+  {
+
+    icons: [<TerminalIcon />],
+    title: 'Software Development',
+    description: 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
+  },
+  {
+    icons: [<BusinessCenterIcon />, <DoubleArrowIcon />], 
+    title: 'Software and Business',
+    description: 'Objectively productivate interoperable process improvements after team building testing procedures'
+  }
+]
 
 export default function Raitings () {
+  //function to generate cards 
+  const generateCards = listOfSpecialities.map ((card) => {
+    return (
+      <Card sx={{ minWidth: 275 }}>
+          <CardContent>
+            {card.icons}
+            <Typography variant="h5" component="div">
+              {card.title}
+            </Typography>
+            <Typography variant="body2">
+              {card.description}
+            </Typography>
+          </CardContent>
+        </Card>
+    )
+  })
+
+
   return (
     <div className="specialisation">
       <div className="specialisation--title" > 
         <h1> How We Can Help </h1> 
       </div>
       <div classname="specialisation--grid">
-        <Card sx={{ minWidth: 275 }}>
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              Word of the Day
-            </Typography>
-            <Typography variant="h5" component="div">
-              Web Applications
-            </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              adjective
-            </Typography>
-            <Typography variant="body2">
-              well meaning and kindly.
-              <br />
-              {'"a benevolent smile"'}
-            </Typography>
-          </CardContent>
-        </Card>
+        {generateCards}
       </div>
     </div>
   );

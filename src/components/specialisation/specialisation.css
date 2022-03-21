@@ -10,3 +10,8 @@
   color: #22346a;
 }
 
+.specialisation--grid{
+  display: flex;
+  flex-direction: column;
+}
+
