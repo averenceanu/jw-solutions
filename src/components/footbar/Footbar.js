@@ -1,5 +1,7 @@
 import './footbar.css'
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import FormControl from '@mui/material/FormControl';
 
 export default function Footbar () {
   return (
@@ -18,13 +20,15 @@ export default function Footbar () {
           <div className="footbar--main-information-quote">
             <p>Consulting. Developing. Innovating.</p>
           </div>
-          <Button color='secondary' variant='contained'>jekasolutions@gmail.com</Button>
         </div>
         <div className="footbar--main-contact-form">
-          <input type="text"/>
-          <input type="text"/>
-          <input type="text"/>
-          <Button color='secondary' variant='contained'>Submit</Button>
+          <h2 className="footbar--main-contact-title"> Estimate your Project? </h2>
+          <FormControl fullWidth={true} required={true} sx={{color:'#e3e2cb' }}> 
+            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, color:'#e3e2cb'}}/>
+            <TextField label="Your Email Address: " color="secondary"  focused sx={{p:3}}/>
+            <TextField label="Tell us more about your Projet:" color="secondary"  focused sx={{p:3}}/>
+            <Button color='secondary' variant='contained'>Send</Button>
+          </FormControl>
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@
   margin: 1%;
   padding-left: 8%;
   font-family: 'Exo 2';
+  width: 50%;
 }
 
 .footbar--main-information-title{
@@ -31,4 +32,18 @@
   color: #f2b891;
   font-size: 120%;
   padding-bottom: 4%;
+}
+
+.footbar--main-contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-right: 8%;
+}
+
+.footbar--main-contact-title{
+  padding: 2%;
+  font-size: 200%;
+  font-weight: 400;
+  font-family: 'Exo 2';
 }
