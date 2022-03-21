@@ -1,0 +1,34 @@
+.footbar{
+  background: #22346a;
+  position: relative;
+  color: #e3e2cb;
+   
+}
+
+.footbar--main{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footbar--main-information{
+  margin: 1%;
+  padding-left: 8%;
+  font-family: 'Exo 2';
+}
+
+.footbar--main-information-title{
+  padding: 2%;
+  font-size: 150%;
+  font-weight: 400;
+}
+
+.footbar--main-information-quote{
+  color: #f2b891;
+  font-size: 120%;
+  padding-bottom: 4%;
+}
