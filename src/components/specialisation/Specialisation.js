@@ -7,20 +7,23 @@ import WebAssetIcon from '@mui/icons-material/WebAsset';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import Grid from '@mui/material/Grid';
 
 const listOfSpecialities = [
   {
+    id: 1,
     icons: [<LanguageIcon />, <WebAssetIcon />],
     title : 'Web Applications',
     description : 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
   }, 
   {
-
+    id: 2,
     icons: [<TerminalIcon />],
     title: 'Software Development',
     description: 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
   },
   {
+    id: 3,
     icons: [<BusinessCenterIcon />, <DoubleArrowIcon />], 
     title: 'Software and Business',
     description: 'Objectively productivate interoperable process improvements after team building testing procedures'
@@ -31,10 +34,17 @@ export default function Raitings () {
   //function to generate cards 
   const generateCards = listOfSpecialities.map ((card) => {
     return (
-      <Card sx={{ minWidth: 275 }}>
+      <Grid item key={card.id} xs={12} md={6} lg={4}> 
+        <Card sx={{ 
+          minWidth: 275, 
+          m:3, 
+          pt: 4,
+          pb: 2,
+          backgroundColor:'#22346a', 
+          color:'#f2b891' }}>
           <CardContent>
-            {card.icons}
-            <Typography variant="h5" component="div">
+            <Typography color='#e635e4'> {card.icons} </Typography>
+            <Typography variant="h4" component="div">
               {card.title}
             </Typography>
             <Typography variant="body2">
@@ -42,18 +52,19 @@ export default function Raitings () {
             </Typography>
           </CardContent>
         </Card>
+      </Grid>
     )
   })
 
 
   return (
     <div className="specialisation">
-      <div className="specialisation--title" > 
+      <div className="specialisation--title"> 
         <h1> How We Can Help </h1> 
       </div>
-      <div classname="specialisation--grid">
+      <Grid container> 
         {generateCards}
-      </div>
+      </Grid>
     </div>
   );
 }
