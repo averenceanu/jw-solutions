@@ -10,10 +10,11 @@ export default function NavBar () {
         <h3 className="navbar--title">JekaWeb Solutions Inc. </h3>
       </div>
       <div className="navbar--buttons">
+        <div className="navbar--buttons-responsive">
           <Button color='secondary'>About Us</Button>
           <Button color='secondary'>Services</Button>
-          <Button color='secondary'>Careers</Button>
           <Button color='secondary'>Contact</Button>
+        </div>
           <Button color='secondary' variant='contained'>Email Us <EmailIcon sx={{pl:1}}/></Button>
       </div>
     </div>
