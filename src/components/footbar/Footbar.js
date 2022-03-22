@@ -13,18 +13,20 @@ export default function Footbar () {
       </div>
       <div className="footbar--main">
         <div className="footbar--main-information">
-          <div className="footbar--main-information-title">
-            <h2>Got a Projet? </h2> 
-            <h2>Let's Talk!</h2> 
-          </div>
-          <div className="footbar--main-information-quote">
-            <p>Consulting. Developing. Innovating.</p>
+          <div className="footbar--main-information-innerCircle"> 
+            <div className="footbar--main-information-title">
+              <h2>Got a Projet? </h2> 
+              <h2 sx={{m:'0px'}}>Let's Talk!</h2> 
+            </div>
+            <div className="footbar--main-information-quote">
+              <p>Consulting. Developing. Innovating.</p>
+            </div>
           </div>
         </div>
         <div className="footbar--main-contact-form">
           <h2 className="footbar--main-contact-title"> Estimate your Project? </h2>
           <FormControl fullWidth={true} required={true} sx={{color:'#e3e2cb' }}> 
-            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, color:'#e3e2cb'}}/>
+            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, color:'#e3e2cb', fontFamily:'Exo 2'}}/>
             <TextField label="Your Email Address: " color="secondary"  focused sx={{p:3}}/>
             <TextField label="Tell us more about your Projet:" color="secondary"  focused sx={{p:3}}/>
             <Button color='secondary' variant='contained'>Send</Button>
