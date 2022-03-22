@@ -11,21 +11,20 @@ export default function About () {
           <p> JekaWeb Solutions Inc. is an independent  IT consulting company guiding businesses. Our specialty is software development, web applications and corporate IT solutions. We take care of the technologies so you can focus on your business.</p>
         </div>
       </div>
-      <div className="about--what-we-do">
-        <div className="about--description"> 
+      <div className="about--our-goals">
+        <div className="goals--description"> 
           <p>Some random text here about the goal of the company.</p>
         </div>
-        <div className="about--title--second">
+        <div className="goals--title">
           <h1>Our goals</h1> 
         </div>
       </div>
-      <div className='break-line'>{" "}</div>
       <div className="about--statistics-main-content">
         <div className="about-statistics"> 
           <h1 style={{color:'#f2b891'}} className="statistics--main-element">100%</h1> <h4 className="statistics--second-element">client satisfaction</h4>
         </div>
         <div className="about-statistics"> 
-          <h1 style={{color:'#e635e4'}} className="statistics--main-element">10 +</h1> <h4 className="statistics--second-element">years of experience</h4>
+          <h1 style={{color:'#ed9b63'}} className="statistics--main-element">10 +</h1> <h4 className="statistics--second-element">years of experience</h4>
         </div>
         <div className="about-statistics"> 
           <h1 style={{color: '#f2b891'}} className="statistics--main-element">Montreal</h1> <h4 className="statistics--second-element">Based</h4>

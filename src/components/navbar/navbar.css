@@ -18,7 +18,7 @@
 }
 
 .navbar--image {
-  width: 10%;
+  width: 20%;
   padding: 1% 1% 1% 8%; 
 }
 
@@ -39,7 +39,12 @@
   padding-right: 3%;
 }
 
+
 @media only screen and (max-width: 769px) {
+  .navbar{
+    width: 100%;
+  }
+
   .navbar--title{
     display: none;
   }
@@ -50,6 +55,7 @@
   .navbar--buttons-responsive{
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 1179px) {

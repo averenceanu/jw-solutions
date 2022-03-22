@@ -1,7 +1,9 @@
 .about {
   display: flex;
+  flex-wrap: wrap;
   background-color: #e3e2cb;
   flex-direction: column;
+  width: 100%;
 }
 
 .about--what-we-do {
@@ -11,20 +13,49 @@
   flex-direction: row;
   font-family: 'Exo 2';
   position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 80%;
 }
 
 .about--title{
   text-align: right;
   padding: 2%;
-  width: 50%;
+  width: 40%;
   color: #22346a;
+  font-size: 160%;
 }
-.about--title--second{
+
+.about--description{
+  width: 60%;
+  font-size: 130%;
+}
+
+.about--our-goals{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Exo 2';
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 80%;
+}
+.goals--description{
+  width: 60%;
+  font-size: 130%;
+  text-align: end;
+  padding-left: 10%;
+}
+.goals--title{
   text-align: left;
   padding: 2%;
-  width: 50%;
+  width: 40%;
   color: #22346a;
+  font-size: 160%;
 }
+
 
 .about--image{
   width: auto;
@@ -39,7 +70,7 @@
   align-items: center;
   flex-wrap: wrap;
   font-family: 'Exo 2';
-  color: #e635e4;
+  color: #ed9b63;
   font-size: 300%;
 }
 
@@ -79,7 +110,7 @@
   flex-direction: row;
   font-family: 'Exo 2';
   font-size: 150%;
-  
+  padding-bottom: 3%;
 }
 
 .about-statistics{
@@ -96,17 +127,3 @@
   margin: 0;
   font-weight: 400;
 }
-
-/* .break-line{
-  position: relative;
-	margin-top: 90px;
-	height: 1px;
-  content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
-} */

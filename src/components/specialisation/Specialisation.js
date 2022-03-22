@@ -43,7 +43,7 @@ export default function Raitings () {
           backgroundColor:'#22346a', 
           color:'#f2b891' }}>
           <CardContent>
-            <Typography color='#e635e4'> {card.icons} </Typography>
+            <Typography color='#e3e2cb'> {card.icons} </Typography>
             <Typography variant="h4" component="div">
               {card.title}
             </Typography>

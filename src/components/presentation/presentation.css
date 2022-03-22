@@ -55,10 +55,10 @@
     color: #f2b891;
   }
   25% {
-    color: #cbdf1e;
+    color: #ED9B63;
   }
   50% {
-    color: #e635e4;
+    color: #f2b891;
   }
   75% {
     color: #e3e2cb;
@@ -84,4 +84,30 @@
 
 .custom-shape-divider-bottom-1647462308 .shape-fill {
   fill: #E3E2CB;
+}
+
+@media only screen and (max-width: 769px) {
+
+  .presentation--title{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+  }
+  .presentation--coorporate {
+    margin: 0;
+  }
+  .presentation--logo {
+    font-size: 120%;
+    padding-top: 2%;
+  }
+  .presentation--description{
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 1179px) {
+
 }
