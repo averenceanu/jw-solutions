@@ -14,10 +14,10 @@ const theme = (mode) => createTheme ({
     },
   },
   typography: {
-    fontSize: 15,
-    fontFamily: 'Exo 2',
+    fontSize: 18,
+    fontFamily: "'Exo 2'",
     fontWeightRegular: 400,
-    fontWeightLight: 400,
+    fontWeightLight: 200,
   },
   components: {
     MuiSwitch: {
