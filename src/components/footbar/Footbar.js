@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './footbar.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -11,16 +11,41 @@ export default function Footbar () {
     description: "",
   })
 
+  const [errorMessage, setErrorMessage] = useState({
+    name: "This field is required", 
+    email:  "This field is required",
+    description: "This field is required"
+  })
+
+  const [error, setError] = useState({
+    name: false,
+    email: false,
+    description: false
+  })
+
   const handleChange = function (event) {
     const {name, value} = event.target
     setValues((prev) => ({...prev, [name]: value}))
+    setError((prev) => ({...prev, [name]: false}))
   }
 
- 
+  const validationForm = function (inputs) {
+    let isValid = true; 
+    for (let key in inputs) {
+      if (values[key] === ""){
+        // setErrorMessage((prev) => ({...prev, [key]: }))
+        setError((prev) => ({...prev, [key]: true}))
+        isValid = false
+      }
+    }
+    return isValid;
+  }
 
-  // useEffect (() => {
-  //   //request to send the information to backend
-  // }, [])
+  const sendForm = function () {
+    if (validationForm(values)){
+      console.log("Submit")
+    } 
+  }
 
   return (
     <div className="footbar" id='footbar'>
@@ -52,6 +77,7 @@ export default function Footbar () {
               value={values.name}
               name={'name'}  
               onChange={handleChange}
+              error={error.name}
               />
             <TextField 
               label="Your Email Address: " 
@@ -61,6 +87,7 @@ export default function Footbar () {
               value={values.email}  
               name={'email'}
               onChange={handleChange}
+              error={error.email}
               />
             <TextField 
               label="Tell us more about your Projet:" 
@@ -71,8 +98,9 @@ export default function Footbar () {
               value={values.description}
               name={'description'}
               onChange={handleChange}
+              error={error.description}
               />
-            <Button onClick={() => (console.log("VALUES", values))} color='secondary' variant='contained'>Send</Button>
+            <Button onClick={() => sendForm()} color='secondary' variant='contained'>Send</Button>
           </FormControl>
         </div>
       </div>
