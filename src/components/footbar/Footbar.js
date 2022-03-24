@@ -11,12 +11,6 @@ export default function Footbar () {
     description: "",
   })
 
-  const [errorMessage, setErrorMessage] = useState({
-    name: "This field is required", 
-    email:  "This field is required",
-    description: "This field is required"
-  })
-
   const [error, setError] = useState({
     name: false,
     email: false,
@@ -33,7 +27,6 @@ export default function Footbar () {
     let isValid = true; 
     for (let key in inputs) {
       if (values[key] === ""){
-        // setErrorMessage((prev) => ({...prev, [key]: }))
         setError((prev) => ({...prev, [key]: true}))
         isValid = false
       }
@@ -51,7 +44,7 @@ export default function Footbar () {
     <div className="footbar" id='footbar'>
       <div className="custom-shape-divider-top-1647462229">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
         </svg>
       </div>
       <div className="footbar--main">
