@@ -56,7 +56,7 @@ export default function Raitings () {
     )
   })
   return (
-    <div className="specialisation">
+    <div className="specialisation" id='specialisation'>
       <div className="specialisation--title"> 
         <h1> How We Can Help </h1> 
       </div>

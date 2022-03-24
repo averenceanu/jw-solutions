@@ -1,5 +1,6 @@
-import "./presentation.css"
-import Button from '@mui/material/Button'
+import "./presentation.css";
+import Button from '@mui/material/Button';
+import {Link} from 'react-scroll';
 
 export default function Presentation () { 
   return (
@@ -16,8 +17,12 @@ export default function Presentation () {
         <p>Our goal is to provide your business with all the tools to best use technology and software for maximal benefit. </p>
       </div> 
       <div className="presentation--button">
-        <Button color='secondary'> About Us </Button>
-        <Button color='info' variant='contained'> Contact Us </Button>
+        <Link style={{ textDecoration: 'none' }} to="about" spy={true} smooth={true}> 
+          <Button color='secondary'> About Us </Button>
+        </Link>
+        <Link style={{ textDecoration: 'none' }} to="footbar" spy={true} smooth={true}> 
+          <Button color='info' variant='contained'> Contact Us </Button>
+        </Link>
       </div>
       <div class="custom-shape-divider-bottom-1647462308">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
