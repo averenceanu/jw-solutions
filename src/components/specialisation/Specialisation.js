@@ -10,23 +10,23 @@ import Grid from '@mui/material/Grid';
 
 const listOfSpecialities = [
   {
-    id: 1,
-    icons: [<LanguageIcon sx={{fontSize:"150%"}}/>, <DoubleArrowIcon sx={{fontSize:"150%"}}/>],
-    title : 'Web Applications',
-    description : 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
-  }, 
-  {
-    id: 2,
-    icons: [<TerminalIcon sx={{fontSize:"150%"}}/>, <DoubleArrowIcon sx={{fontSize:"150%"}}/>],
+    id: 3,
+    icons: [<TerminalIcon sx={{fontSize:"200%"}}/>, <DoubleArrowIcon sx={{fontSize:"200%"}}/>],
     title: 'Software Development',
-    description: 'Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.'
+    description: 'We are dedicated to helping you with the most demanding software development and integration tasks. We got the skilled professionals to find the solution, be it System Engineering, Cloud Computing Skills, Data Structures or Algorithms.'
   },
   {
-    id: 3,
-    icons: [<BusinessCenterIcon sx={{fontSize:"150%"}}/>, <DoubleArrowIcon sx={{fontSize:"150%"}}/>], 
-    title: 'Software and Business',
-    description: 'Objectively productivate interoperable process improvements after team building testing procedures'
-  }
+    id: 2,
+    icons: [<BusinessCenterIcon sx={{fontSize:"200%"}}/>, <DoubleArrowIcon sx={{fontSize:"200%"}}/>], 
+    title: 'Business Process Automatisation',
+    description: "BPA often requires connecting multiple enterprise information technology systems and becomes complex quickly. By delegating this convoluted, nonetheless important task to us, you can focus on growing your business while we tailor solutions specifically to your company's needs."
+  },
+  {
+    id: 1,
+    icons: [<LanguageIcon sx={{fontSize:"200%"}}/>, <DoubleArrowIcon sx={{fontSize:"200%"}}/>],
+    title : 'Web Development',
+    description : "Our Web Developers build web experiences that are feature-packed, digitally transformative and performing. A company's website has a crucial impact on its' customer value; let us bring the best from yours."
+  }, 
 ]
 
 export default function Raitings () {

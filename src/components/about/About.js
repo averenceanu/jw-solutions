@@ -13,7 +13,7 @@ export default function About () {
       </div>
       <div className="about--our-goals">
         <div className="goals--description"> 
-          <p>Some random text here about the goal of the company.</p>
+          <p>Our goal is to provide the solution for your IT problem. Highly skilled software developers, business analysts, and engineers are ready to find a fix quickly and efficiently. Working on close collaboration, we want to achieve excellence for our clients and partners. </p>
         </div>
         <div className="goals--title">
           <h1>Our goals</h1> 
@@ -27,7 +27,7 @@ export default function About () {
           <h1 style={{color:'#ed9b63'}} className="statistics--main-element">10 +</h1> <h4 className="statistics--second-element">years of experience</h4>
         </div>
         <div className="about-statistics"> 
-          <h1 style={{color: '#f2b891'}} className="statistics--main-element">Montreal</h1> <h4 className="statistics--second-element">Based</h4>
+          <h1 style={{color: '#f2b891'}} className="statistics--main-element">Montreal</h1> <h4 className="statistics--second-element">based</h4>
         </div>
       </div>
       <div className="about--shape"> 
@@ -37,8 +37,8 @@ export default function About () {
           </svg>
         </div>
         <div className="about--image-div" style ={{backgroundImage: `url(./images/image1.jpeg)`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', width: 'auto', height: '70vh'}}>
-          <h2 className="about--tag"> #Success   </h2>
-          <h2 className="about--tag"> #Determination </h2>
+          <h2 className="about--tag"> #Expertise</h2>
+          <h2 className="about--tag"> #Excellence</h2>
         </div>
       </div>
     </div>
