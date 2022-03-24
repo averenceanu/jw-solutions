@@ -3,6 +3,7 @@ import './footbar.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
 export default function Footbar () {
   const [values, setValues] = useState({
@@ -23,6 +24,7 @@ export default function Footbar () {
     const {name, value} = event.target
     setValues((prev) => ({...prev, [name]: value}))
     setError((prev) => ({...prev, [name]: false}))
+    setDisplayDiv(false)
   }
 
   const validationForm = function (inputs) {
@@ -55,8 +57,9 @@ export default function Footbar () {
         <div className="footbar--main-information">
           <div className="footbar--main-information-innerCircle"> 
             <div className="footbar--main-information-title">
-              <h2>Got a Projet? </h2> 
-              <h2 sx={{m:'0px'}}>Let's Talk!</h2> 
+              <h2 className="footbar--h2">Got a Projet? </h2> 
+              <h2 className="footbar--h2">Let's Talk!</h2> 
+              <h3 className="footbar--phone">  +1 (514)  312-1579</h3>
             </div>
             <div className="footbar--main-information-quote">
               <p>Consulting. Developing. Innovating.</p>

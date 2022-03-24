@@ -65,3 +65,15 @@
   font-weight: 400;
   font-family: 'Exo 2';
 }
+
+.footbar--phone{
+  font-size: 50%;
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+  color: #ed9b63;
+}
+.footbar--h2{
+  margin: 0;
+  padding: 0;
+}
