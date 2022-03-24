@@ -17,6 +17,8 @@ export default function Footbar () {
     description: false
   })
 
+  const [displayDiv, setDisplayDiv] = useState (false)
+
   const handleChange = function (event) {
     const {name, value} = event.target
     setValues((prev) => ({...prev, [name]: value}))
@@ -37,6 +39,8 @@ export default function Footbar () {
   const sendForm = function () {
     if (validationForm(values)){
       console.log("Submit")
+      setValues ((prev) => ({...prev, name: "", email: "", description: ""}))
+      setDisplayDiv(true)
     } 
   }
 
@@ -60,6 +64,7 @@ export default function Footbar () {
           </div>
         </div>
         <div className="footbar--main-contact-form">
+          <div style={{display: displayDiv ? 'block' : 'none', color: '#ed9b63', fontFamily: "'Exo 2'", fontSize: '120%', textAlign: 'center'}}> <h3> Thank you. <br/> You should hear back from us soon! </h3> </div>
           <h2 className="footbar--main-contact-title"> Estimate your Project? </h2>
           <FormControl fullWidth={true} required={true} sx={{color:'#e3e2cb' }} id='contact-email'> 
             <TextField 
