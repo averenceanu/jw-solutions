@@ -3,7 +3,6 @@ import './footbar.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
 export default function Footbar () {
   const [values, setValues] = useState({
@@ -101,7 +100,10 @@ export default function Footbar () {
               onChange={handleChange}
               error={error.description}
               />
-            <Button onClick={() => sendForm()} color='secondary' variant='contained'>Send</Button>
+            <div className="footbar--buttons">
+              <Button onClick={() => setValues ((prev) => ({...prev, name: "", email: "", description: ""}))} color='info' variant='contained' fullWidth>Clear</Button>
+              <Button onClick={() => sendForm()} color='secondary' variant='contained' fullWidth>Send</Button>
+            </div>
           </FormControl>
         </div>
       </div>

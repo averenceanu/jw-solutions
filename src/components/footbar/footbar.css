@@ -77,3 +77,10 @@
   margin: 0;
   padding: 0;
 }
+
+.footbar--buttons{
+  display: flex;
+  flex-direction: row;
+  padding-right: 5%;
+  padding-left: 5%;
+}
