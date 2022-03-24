@@ -26,9 +26,9 @@ export default function Footbar () {
         <div className="footbar--main-contact-form">
           <h2 className="footbar--main-contact-title"> Estimate your Project? </h2>
           <FormControl fullWidth={true} required={true} sx={{color:'#e3e2cb' }} id='contact-email'> 
-            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, color:'#e3e2cb', fontFamily:'Exo 2'}}/>
-            <TextField label="Your Email Address: " color="secondary"  focused sx={{p:3}}/>
-            <TextField label="Tell us more about your Projet:" color="secondary"  focused sx={{p:3}}/>
+            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, input: { color: '#ffffff'}}}/>
+            <TextField label="Your Email Address: " color="secondary"  focused sx={{p:3, input: { color: '#ffffff' }}}/>
+            <TextField label="Tell us more about your Projet:" color="secondary" focused sx={{p:3 }} multiline inputProps={{ style: { color: "#ffffff" } }}/>
             <Button color='secondary' variant='contained'>Send</Button>
           </FormControl>
         </div>
