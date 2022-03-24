@@ -1,9 +1,27 @@
+import { useState, useEffect } from 'react';
 import './footbar.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 
 export default function Footbar () {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    description: "",
+  })
+
+  const handleChange = function (event) {
+    const {name, value} = event.target
+    setValues((prev) => ({...prev, [name]: value}))
+  }
+
+ 
+
+  // useEffect (() => {
+  //   //request to send the information to backend
+  // }, [])
+
   return (
     <div className="footbar" id='footbar'>
       <div className="custom-shape-divider-top-1647462229">
@@ -26,10 +44,35 @@ export default function Footbar () {
         <div className="footbar--main-contact-form">
           <h2 className="footbar--main-contact-title"> Estimate your Project? </h2>
           <FormControl fullWidth={true} required={true} sx={{color:'#e3e2cb' }} id='contact-email'> 
-            <TextField label="Name or Company Name: " color="secondary" focused  sx={{p:3, input: { color: '#ffffff'}}}/>
-            <TextField label="Your Email Address: " color="secondary"  focused sx={{p:3, input: { color: '#ffffff' }}}/>
-            <TextField label="Tell us more about your Projet:" color="secondary" focused sx={{p:3 }} multiline inputProps={{ style: { color: "#ffffff" } }}/>
-            <Button color='secondary' variant='contained'>Send</Button>
+            <TextField 
+              label="Name or Company Name: " 
+              color="secondary" 
+              focused  
+              sx={{p:3, input: { color: '#ffffff'}}}
+              value={values.name}
+              name={'name'}  
+              onChange={handleChange}
+              />
+            <TextField 
+              label="Your Email Address: " 
+              color="secondary"  
+              focused 
+              sx={{p:3, input: { color: '#ffffff' }}}
+              value={values.email}  
+              name={'email'}
+              onChange={handleChange}
+              />
+            <TextField 
+              label="Tell us more about your Projet:" 
+              color="secondary" 
+              focused sx={{p:3 }} 
+              multiline 
+              inputProps={{ style: { color: "#ffffff" } }}
+              value={values.description}
+              name={'description'}
+              onChange={handleChange}
+              />
+            <Button onClick={() => (console.log("VALUES", values))} color='secondary' variant='contained'>Send</Button>
           </FormControl>
         </div>
       </div>
